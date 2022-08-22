@@ -18,7 +18,8 @@ const saveImage = () => {
     const ctx = canvas.getContext("2d");
     canvas.width = previewImg.naturalWidth;
     canvas.height = previewImg.naturalHeight;
-
+    alert("width" + previewImg.naturalWidth);
+    alert("height" + previewImg.naturalHeight);
     const x = (canvas.width / 2) - 3.5;
     const y = (-canvas.height / 2) + 35;
     canvas.style.letterSpacing = '1px';
