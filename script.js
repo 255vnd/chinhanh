@@ -24,7 +24,7 @@ const saveImage = () => {
     canvas.style.letterSpacing = '1px';
     ctx.translate(canvas.width / 2, canvas.height / 2);
     ctx.drawImage(previewImg, -canvas.width / 2, -canvas.height / 2, canvas.width, canvas.height);
-    ctx.font = "19pt Verdana";
+    ctx.font = "50pt Verdana";
     ctx.fillStyle = "white";
     ctx.textAlign = "end";
     ctx.fillText('Network: 22 thg8, 2022 20:00:45 GMT+07:00',x,y);
