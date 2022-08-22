@@ -8,6 +8,8 @@ const loadImage = () => {
     let file = fileInput.files[0];
     if(!file) return;
     previewImg.src = URL.createObjectURL(file);
+    previewImg.height = 1280;
+    previewImg.width = 960;
     previewImg.addEventListener("load", () => {
         document.querySelector(".container").classList.remove("disable");
     });
@@ -22,10 +24,10 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 const saveImage = () => {
     const canvas = document.createElement("canvas");
     const ctx = canvas.getContext("2d");
-    canvas.width = previewImg.naturalWidth;
-    canvas.height = previewImg.naturalHeight;
-    alert("width" + previewImg.naturalWidth);
-    alert("height" + previewImg.naturalHeight);
+    // canvas.width = previewImg.naturalWidth;
+    // canvas.height = previewImg.naturalHeight;
+    canvas.width = 960;
+    canvas.height = 1280;
     const x = (canvas.width / 2) - 3.5;
     const y = (-canvas.height / 2) + 35;
     canvas.style.letterSpacing = '1px';
