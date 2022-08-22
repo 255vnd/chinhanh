@@ -13,6 +13,12 @@ const loadImage = () => {
     });
 }
 
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    // alert('Haha');
+}else{
+    // alert('huhu');
+}
+
 const saveImage = () => {
     const canvas = document.createElement("canvas");
     const ctx = canvas.getContext("2d");
