@@ -48,7 +48,6 @@ const saveImage = () => {
     ctx.fillStyle = "white";
     ctx.textAlign = "end";
     ctx.fillText(text,x,y);
-    ctx.font = "19pt Verdana";
     ctx.fillText('Việt Yên',x,y + 35);
     ctx.fillText('Bắc Giang',x,y + 74);
     const link = document.createElement("a");
