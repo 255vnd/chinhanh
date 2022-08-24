@@ -24,8 +24,6 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 const saveImage = () => {
     const canvas = document.createElement("canvas");
     const ctx = canvas.getContext("2d");
-    // canvas.width = previewImg.naturalWidth;
-    // canvas.height = previewImg.naturalHeight;
     canvas.width = 960;
     canvas.height = 1280;
     const x = (canvas.width / 2) - 3.5;
